@@ -55,12 +55,12 @@ body {
   .btn {
     margin: 20px;
     display: inline-block;
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
   }
   .container{
     width:100%;
-    margin-top:100px;
+    margin-top:50%;
   }
   #level-title{
     font-size:2rem;
