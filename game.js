@@ -9,7 +9,14 @@ $("body").on("keydown", function() {
   if (!gameStart) {
     nextSequence();
     gameStart = true;
-    $(".restart").css("display", "none");
+    //$(".restart").css("display", "none");
+  }
+});
+$("body").on("touchstart", function() {
+  if (!gameStart) {
+    nextSequence();
+    gameStart = true;
+    //$(".restart").css("display", "none");
   }
 });
 $(".btn").on("click", buttonHandler);

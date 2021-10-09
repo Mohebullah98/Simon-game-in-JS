@@ -51,7 +51,7 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-.restart{
+/* .restart{
   display: none;
   background-color: red;
   color:#FEF2BF;
@@ -59,7 +59,7 @@ body {
   background-color: mahogany;
   font-family: 'Press Start 2P', cursive;
   height: 50px;
-}
+} */
 
 @media (max-width:950px){
   .btn {
@@ -75,7 +75,7 @@ body {
   #level-title{
     font-size:2rem;
   }
-  .restart{
+  /* .restart{
     display: inline-block;
-  }
+  } */
 }
