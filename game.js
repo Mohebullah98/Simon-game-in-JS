@@ -5,20 +5,14 @@ let level = 1;
 let nextLevel;
 let gameStart = false;
 //event handlers
-$("body").on("keydown", function() {
+$("body").on("keydown touchstart", function() {
   if (!gameStart) {
     nextSequence();
     gameStart = true;
     //$(".restart").css("display", "none");
   }
 });
-$("body").on("touchstart", function() {
-  if (!gameStart) {
-    nextSequence();
-    gameStart = true;
-    //$(".restart").css("display", "none");
-  }
-});
+
 $(".btn").on("click", buttonHandler);
 
 function nextSequence() { //determine next button in pattern
