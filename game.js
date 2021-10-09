@@ -9,6 +9,7 @@ $("body").on("keydown", function() {
   if (!gameStart) {
     nextSequence();
     gameStart = true;
+    $(".restart").css("display", "none");
   }
 });
 $(".btn").on("click", buttonHandler);
@@ -56,7 +57,7 @@ function checkAnswer() { //check to see if user's answer is correct
       $("body").removeClass("game-over");
     }, 200);
     startOver();
-
+    $(".restart").css("display", "inline-block");
 
   }
 }
@@ -82,4 +83,12 @@ function startOver() { //reset all variables
   userClickedPattern.splice(0, userClickedPattern.length);
   gamePattern.splice(0, gamePattern.length);
   gameStart = false;
+}
+
+function restart() { //restart button function
+  if (!gameStart) {
+    nextSequence();
+    gameStart = true;
+    $(".restart").css("display", "none");
+  }
 }
