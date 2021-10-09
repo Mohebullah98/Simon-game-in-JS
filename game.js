@@ -5,7 +5,7 @@ let level = 1;
 let nextLevel;
 let gameStart = false;
 //event handlers
-$("body").on("keydown touchstart", function() {
+$(document).on("keydown touchstart", function() {
   if (!gameStart) {
     nextSequence();
     gameStart = true;
